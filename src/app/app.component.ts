@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { UsuarioCardComponent } from './componentes/usuario-card/usuario-card.component';
+import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, UsuarioCardComponent, UsuariosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
