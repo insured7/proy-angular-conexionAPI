@@ -8,7 +8,7 @@ import { Usuario } from '../modelos/usuario';
 })
 export class ApiServicioService {
 
-  private baseurl = 'http://localhost:8080/api/usuarios'; //url de mi api
+  private baseurl = 'http://localhost:8080/usuarios'; //url de mi api
 
   constructor(private http : HttpClient) { }
 
