@@ -1,0 +1,23 @@
+/* Estilos personalizados para el login */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+  background: rgba(255, 255, 255, 0.7); /* Fondo translúcido */
+}
+
+h2 {
+  color: #28a745; /* Verde */
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 0.375rem;
+  border: 1px solid #ccc;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
