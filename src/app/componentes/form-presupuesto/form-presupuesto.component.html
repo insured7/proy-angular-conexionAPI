@@ -1,1 +1,99 @@
-<p>form-presupuesto works!</p>
+<div class="form-presupuesto bg-light text-dark">
+  <!-- Header -->
+  <header class="container-fluid bg-success text-white py-3">
+    <div class="d-flex align-items-center justify-content-between flex-wrap">
+      <div class="d-flex align-items-center">
+        <img
+          src="AFondoLogo.png"
+          alt="Logo"
+          class="img-fluid"
+          style="height: 100px; width: 180px"
+        />
+      </div>
+      <div>
+        <h4
+          class="ms-3 mb-0 fw-bold text-center w-100"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          "
+        >
+          A FONDO LIMPIEZAS
+        </h4>
+      </div>
+      <nav class="d-flex gap-2 mt-3 mt-md-0">
+        <button class="btn btn-light" routerLink="/">Inicio</button>
+        <button class="btn btn-light" routerLink="/sobre-nosotros">
+          Sobre Nosotros
+        </button>
+        <button class="btn btn-warning fw-bold" routerLink="/presupuesto">
+          Presupuesto
+        </button>
+        <button class="btn btn-light" routerLink="/login">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="presupuesto" class="container py-5 container-fluid min-vh-100">
+    <h2 class="text-center mb-4">Solicitar Presupuesto</h2>
+    <form>
+      <div class="row">
+        <!-- Nombre de la persona o empresa -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="nombre">Nombre o Empresa</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Ingresa tu nombre o el nombre de la empresa"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Dirección -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              placeholder="Ingresa la dirección"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Detalles del presupuesto -->
+      <div class="form-group">
+        <label for="detalles">Detalles del Servicio</label>
+        <textarea
+          class="form-control"
+          id="detalles"
+          rows="4"
+          placeholder="Escribe los detalles del servicio que necesitas"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary">
+          Solicitar Presupuesto
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <small
+      >&copy; 2025 A Fondo Limpiezas | contacto&#64;afondolimpiezas.com | +34
+      600 123 456</small
+    >
+  </footer>
+</div>
